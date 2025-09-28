@@ -1,0 +1,404 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "TTMusteriTemsilcisiAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/CustomerRepresentative/RegisterUser": {
+      "post": {
+        "tags": [
+          "CustomerRepresentative"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerRepresentativeClass"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerRepresentativeClass"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerRepresentativeClass"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CustomerRepresentative/LoginUser": {
+      "post": {
+        "tags": [
+          "CustomerRepresentative"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerRepresentativeClass"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerRepresentativeClass"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerRepresentativeClass"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriber/Post": {
+      "post": {
+        "tags": [
+          "Subscriber"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriberClass"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriberClass"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriberClass"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriber/ProcessFinishedTrue/{id}": {
+      "put": {
+        "tags": [
+          "Subscriber"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriberClass"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriberClass"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriberClass"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriber/GetAllSubscribers": {
+      "get": {
+        "tags": [
+          "Subscriber"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriber/GetCRSubscribers/{CustomerRepresentativeID}": {
+      "get": {
+        "tags": [
+          "Subscriber"
+        ],
+        "parameters": [
+          {
+            "name": "CustomerRepresentativeID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriber/GetSubscribersByPhoneNumber/{PhoneNumber}": {
+      "get": {
+        "tags": [
+          "Subscriber"
+        ],
+        "parameters": [
+          {
+            "name": "PhoneNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Subscriber/GetAllPF_False": {
+      "get": {
+        "tags": [
+          "Subscriber"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TTPanel/RegisterUser": {
+      "post": {
+        "tags": [
+          "TTPanel"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TTPanelClass"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TTPanelClass"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TTPanelClass"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TTPanel/LoginUser": {
+      "post": {
+        "tags": [
+          "TTPanel"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TTPanelClass"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TTPanelClass"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TTPanelClass"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CustomerRepresentativeClass": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "tckn": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "membershipDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "membershipEndDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubscriberClass": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "customerRepresentativeID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "tckn": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "district": {
+            "type": "string",
+            "nullable": true
+          },
+          "addedDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "processFinished": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TTPanelClass": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

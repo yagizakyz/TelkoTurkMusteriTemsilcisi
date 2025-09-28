@@ -1,0 +1,191 @@
+[
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.CustomerRepresentativeController",
+    "Method": "GetAllCR",
+    "RelativePath": "api/CustomerRepresentative/GetAllCR",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.CustomerRepresentativeController",
+    "Method": "GetCRByPhoneNumber",
+    "RelativePath": "api/CustomerRepresentative/GetCRByPhoneNumber/{PhoneNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.CustomerRepresentativeController",
+    "Method": "LoginUser",
+    "RelativePath": "api/CustomerRepresentative/LoginUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TTMusteriTemsilcisiAPI.Models.CustomerRepresentativeClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.CustomerRepresentativeController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/CustomerRepresentative/RegisterUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TTMusteriTemsilcisiAPI.Models.CustomerRepresentativeClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.SubscriberController",
+    "Method": "GetAllPF_False",
+    "RelativePath": "api/Subscriber/GetAllPF_False",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.SubscriberController",
+    "Method": "GetAllPF_True",
+    "RelativePath": "api/Subscriber/GetAllPF_True",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.SubscriberController",
+    "Method": "GetAllSubscribers",
+    "RelativePath": "api/Subscriber/GetAllSubscribers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.SubscriberController",
+    "Method": "GetCRSubscribers",
+    "RelativePath": "api/Subscriber/GetCRSubscribers/{CustomerRepresentativeID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CustomerRepresentativeID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.SubscriberController",
+    "Method": "GetSubscribersByPhoneNumber",
+    "RelativePath": "api/Subscriber/GetSubscribersByPhoneNumber/{PhoneNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.SubscriberController",
+    "Method": "Post",
+    "RelativePath": "api/Subscriber/Post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subscriberObj",
+        "Type": "TTMusteriTemsilcisiAPI.Models.SubscriberClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.SubscriberController",
+    "Method": "ProcessFinishedTrue",
+    "RelativePath": "api/Subscriber/ProcessFinishedTrue/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "subscriberObj",
+        "Type": "TTMusteriTemsilcisiAPI.Models.SubscriberClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.TTPanelController",
+    "Method": "LoginUser",
+    "RelativePath": "api/TTPanel/LoginUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TTMusteriTemsilcisiAPI.Models.TTPanelClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TTMusteriTemsilcisiAPI.Controllers.TTPanelController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/TTPanel/RegisterUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TTMusteriTemsilcisiAPI.Models.TTPanelClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
